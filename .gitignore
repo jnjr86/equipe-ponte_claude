@@ -1,0 +1,9 @@
+# Material de origem (briefing, referências) — fica só no HD, fora do repositório público
+conteudo/
+design-system/
+refs/
+
+.DS_Store
+.vercel
+node_modules
+.claude/
