@@ -33,23 +33,26 @@ document.querySelectorAll("[data-split]").forEach((title) => {
 });
 
 // Entrada dos blocos ao rolar a página
-const revealItems = document.querySelectorAll(".reveal");
+let pending = [...document.querySelectorAll(".reveal")];
 
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-in");
-        observer.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-  );
-  revealItems.forEach((item) => observer.observe(item));
-} else {
-  revealItems.forEach((item) => item.classList.add("is-in"));
-}
+const revealVisible = () => {
+  const limit = window.innerHeight - 40;
+  pending = pending.filter((item) => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top > limit || rect.bottom < 0) return true;
+    item.classList.add("is-in");
+    return false;
+  });
+  if (!pending.length) {
+    window.removeEventListener("scroll", revealVisible);
+    window.removeEventListener("resize", revealVisible);
+  }
+};
+
+window.addEventListener("scroll", revealVisible, { passive: true });
+window.addEventListener("resize", revealVisible);
+window.addEventListener("load", revealVisible);
+revealVisible();
 
 // Leve paralaxe das formas decorativas
 const decos = document.querySelectorAll("[data-parallax]");
