@@ -6,9 +6,8 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-ink/10">
       <div className="mx-auto flex max-w-[1120px] flex-col gap-5 px-4 py-10 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5 self-start">
-          <Image src="/img/logo.png" alt="" width={30} height={30} className="rounded-full" />
-          <span className="text-[17px] font-semibold tracking-[-0.03em]">Equipe Ponte</span>
+        <Link href="/" className="self-start" aria-label="Equipe Ponte — início">
+          <Image src="/img/logo-horizontal.png" alt="Equipe Ponte" width={1436} height={597} className="h-16 w-auto sm:h-20" />
         </Link>
         <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[14px] text-ink-soft">
           {nav.map((item) => (
