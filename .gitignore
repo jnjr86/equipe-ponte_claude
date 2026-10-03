@@ -5,6 +5,10 @@ refs/
 
 .DS_Store
 .vercel
-node_modules
-.claude/
 .env*
+node_modules
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+.claude/
