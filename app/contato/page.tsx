@@ -41,12 +41,12 @@ export default function ContatoPage() {
 
       <section className="pt-16 sm:pt-24">
         <Container className="grid items-stretch gap-4 lg:grid-cols-2">
-          <Reveal className="rounded-3xl bg-white p-6 sm:p-8">
+          <Reveal delay={0.1} className="rounded-3xl bg-white p-6 sm:p-8 lg:order-2">
             <h2 className="text-[22px] tracking-[-0.03em]">Escreva para nós</h2>
             <p className="mt-1 text-[14px] text-ink-muted">As mensagens chegam em {contact.email}.</p>
             <ContactForm />
           </Reveal>
-          <Reveal delay={0.1} className="flex flex-col gap-5 rounded-3xl bg-ink p-6 text-paper sm:p-8">
+          <Reveal className="flex flex-col gap-5 rounded-3xl bg-ink p-6 text-paper sm:p-8 lg:order-1">
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 text-verde-01"><IconPin /></span>
