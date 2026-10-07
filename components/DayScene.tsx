@@ -90,6 +90,10 @@ const art: Record<string, React.ReactNode> = {
   ),
 };
 
+const sceneImages: Record<string, { src: string; alt: string }> = {
+  musica: { src: "/img/cena-musica.jpg", alt: "Ilustração: pessoa sorridente de fones de ouvido abraçando um disco, diante de uma playlist de músicas" },
+};
+
 /** Cena interativa: escolha uma frase e o "dia" da ilustração muda junto. */
 export function DayScene() {
   const [active, setActive] = useState(0);
@@ -138,6 +142,21 @@ export function DayScene() {
             </motion.g>
           </AnimatePresence>
         </motion.svg>
+        {/* Cenas com imagem própria substituem a ilustração */}
+        <AnimatePresence>
+          {sceneImages[scene.key] && (
+            <motion.img
+              key={scene.key}
+              src={sceneImages[scene.key].src}
+              alt={sceneImages[scene.key].alt}
+              initial={{ opacity: 0, scale: 1.04 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          )}
+        </AnimatePresence>
         <AnimatePresence mode="wait">
           <motion.div
             key={scene.key}
