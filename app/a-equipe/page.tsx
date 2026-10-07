@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ContactBlock } from "@/components/ContactBlock";
 import { PageHero } from "@/components/PageHero";
-import { Container, Reveal } from "@/components/ui";
+import { Container, Reveal, Title } from "@/components/ui";
 import { equipe } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -54,6 +54,9 @@ export default function EquipePage() {
 
       <section className="pt-16 sm:pt-24">
         <Container>
+          <Reveal className="mx-auto mb-10 max-w-2xl text-center sm:mb-12">
+            <Title accent="sete coordenadores:">Atualmente, a equipe conta com</Title>
+          </Reveal>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {equipe.members.map((m, i) => (
               <Reveal key={m.name} delay={(i % 3) * 0.07}>
@@ -62,7 +65,7 @@ export default function EquipePage() {
                     {initials(m.name)}
                   </span>
                   <div>
-                    <h2 className="text-[17px] font-semibold tracking-[-0.02em]">{m.name}</h2>
+                    <h3 className="text-[17px] font-semibold tracking-[-0.02em]">{m.name}</h3>
                     <p className="mt-0.5 text-[14px] font-medium text-leaf">Psicanalista</p>
                     <p className="mt-1.5 text-[14px] leading-relaxed text-ink-soft">{m.role}</p>
                   </div>
