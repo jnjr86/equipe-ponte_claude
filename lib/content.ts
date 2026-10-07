@@ -185,6 +185,8 @@ export const equipe = {
     { name: "Giovanna Arruda Savoy", role: "Coordenadora dos grupos da Equipe Ponte desde 2024" },
     { name: "Ligia Macedo Campos", role: "Coordenadora dos grupos da Equipe Ponte desde 2024" },
   ],
+  partners:
+    "A Equipe conta também com algumas parcerias (semestrais ou anuais) de estagiários de faculdades de Psicologia da cidade de São Paulo e de mestrandos da USP.",
   toContact:
     "Para entrar em contato conosco clique no link contato e escreva para nós ou entre em nossas páginas nas redes sociais.",
 };

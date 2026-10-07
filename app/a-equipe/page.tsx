@@ -71,10 +71,20 @@ export default function EquipePage() {
               </Reveal>
             ))}
           </div>
+          <Reveal className="mx-auto mt-14 max-w-3xl space-y-4 rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
+            <p>{equipe.partners}</p>
+            <p>
+              Para entrar em contato conosco clique no link{" "}
+              <Link href="/contato" className="font-medium text-leaf underline underline-offset-4">
+                contato
+              </Link>{" "}
+              e escreva para nós ou entre em nossas páginas nas redes sociais.
+            </p>
+          </Reveal>
         </Container>
       </section>
 
-      <ContactBlock text={equipe.toContact} />
+      <ContactBlock />
     </>
   );
 }
