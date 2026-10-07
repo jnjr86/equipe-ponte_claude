@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { contact, nav } from "@/lib/content";
-import { IconMail } from "./Icons";
+import { SocialEmail, SocialFacebook, SocialInstagram } from "./Icons";
+
+const social = [
+  { href: `mailto:${contact.email}`, label: `E-mail: ${contact.email}`, Icon: SocialEmail },
+  { href: contact.facebook, label: "Facebook da Equipe Ponte", Icon: SocialFacebook },
+  { href: contact.instagram, label: "Instagram da Equipe Ponte", Icon: SocialInstagram },
+];
 
 export function Footer() {
   return (
@@ -31,11 +37,18 @@ export function Footer() {
         <div className="mt-8 flex items-center justify-between gap-4 border-t border-paper/20 pt-6">
           <p className="text-[13px] text-paper/70">© {new Date().getFullYear()} Equipe Ponte</p>
           <ul className="flex items-center gap-4">
-            <li>
-              <a href={`mailto:${contact.email}`} aria-label={`E-mail: ${contact.email}`} className="block text-paper/85 transition-colors hover:text-verde-01">
-                <IconMail width={24} height={24} />
-              </a>
-            </li>
+            {social.map(({ href, label, Icon }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  aria-label={label}
+                  {...(href.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})}
+                  className="block text-paper/85 transition-colors hover:text-verde-01"
+                >
+                  <Icon />
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

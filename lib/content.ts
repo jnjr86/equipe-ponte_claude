@@ -15,6 +15,8 @@ export const contact = {
   street: "Rua Paris, 656 – Sumaré",
   cep: "CEP 01257-040 · São Paulo",
   near: "Bem próximo ao metrô Vila Madalena",
+  facebook: "https://www.facebook.com/equipeponte/",
+  instagram: "https://www.instagram.com/equipeponte/",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rua+Paris,+656+-+Sumar%C3%A9,+S%C3%A3o+Paulo+-+SP,+01257-040",
   mapsEmbed: "https://www.google.com/maps?q=Rua+Paris,+656+-+Sumar%C3%A9,+S%C3%A3o+Paulo+-+SP,+01257-040&output=embed",
 };
