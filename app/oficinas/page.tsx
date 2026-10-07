@@ -64,7 +64,7 @@ export default function OficinasPage() {
         <Container>
           <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
             <Eyebrow>Cada oficina</Eyebrow>
-            <Title accent="um só grupo.">Cinco oficinas,</Title>
+            <Title accent="um só grupo">Cinco oficinas,</Title>
           </Reveal>
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {oficinas.map((o, i) => (
@@ -111,7 +111,7 @@ export default function OficinasPage() {
         <Container className="flex flex-col gap-10">
           <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
             <Eyebrow tone="sage">No grupo</Eyebrow>
-            <Title accent="escuta e articula.">A Psicanálise</Title>
+            <Title accent="escuta e articula">A Psicanálise</Title>
           </Reveal>
           <Reveal delay={0.1}>
             <DayScene />

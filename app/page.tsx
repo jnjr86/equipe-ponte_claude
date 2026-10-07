@@ -28,7 +28,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-6">
             <Reveal className="flex flex-col items-start gap-4">
               <Eyebrow>Sobre a Ponte</Eyebrow>
-              <Title accent="particular.">Cada um, de um jeito muito</Title>
+              <Title accent="particular">Cada um, de um jeito muito</Title>
               <p className="text-[15px] leading-relaxed text-ink-soft">{home.intro}</p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -60,7 +60,7 @@ export default function HomePage() {
       {/* Oficinas */}
       <section className="pt-24 sm:pt-32" id="oficinas">
         <Container>
-          <SectionHead eyebrow="Oficinas" tone="tide" title="Cinco oficinas," accent="um só grupo." text={home.offer} />
+          <SectionHead eyebrow="Oficinas" tone="tide" title="Cinco oficinas," accent="um só grupo" text={home.offer} />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {oficinas.map((o, i) => (
               <GardenCard key={o.id} id={o.id} index={i} name={o.name} lead={o.lead} href={`/oficinas#${o.id}`} />
@@ -80,7 +80,7 @@ export default function HomePage() {
         <Container className="flex flex-col gap-10">
           <Reveal className="flex max-w-xl flex-col items-start gap-4">
             <Eyebrow tone="sage">O grupo</Eyebrow>
-            <Title accent="três horas juntos.">Quartas e sextas,</Title>
+            <Title accent="três horas juntos">Quartas e sextas,</Title>
             <p className="text-[15px] leading-relaxed text-ink-soft">{grupo.schedule}</p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -92,7 +92,7 @@ export default function HomePage() {
       {/* A equipe */}
       <section className="pt-24 sm:pt-32">
         <Container>
-          <SectionHead eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte." text="A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia." />
+          <SectionHead eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte" text="A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia." />
           <Reveal className="mt-12">
             <figure className="overflow-hidden rounded-[32px] bg-white">
               <div className="relative aspect-[1170/596]">
@@ -112,7 +112,7 @@ export default function HomePage() {
       {/* Obras e encontros */}
       <section className="pt-24 sm:pt-32">
         <Container>
-          <SectionHead eyebrow="Obras e encontros" tone="mint" title="A arte" accent="faz falar." text="Pinturas, bordados, palco e sarau: um pouco do que nasce nas oficinas." />
+          <SectionHead eyebrow="Obras e encontros" tone="mint" title="A arte" accent="faz falar" text="Pinturas, bordados, palco e sarau: um pouco do que nasce nas oficinas." />
           <div className="mt-12 grid auto-rows-[160px] grid-cols-2 gap-3 sm:auto-rows-[190px] lg:grid-cols-4">
             {gallery.map((g, i) => (
               <Reveal
@@ -131,7 +131,7 @@ export default function HomePage() {
       {/* Caminhos */}
       <section className="pt-24 sm:pt-32">
         <Container>
-          <SectionHead eyebrow="Por onde começar" tone="tide" title="Conheça" accent="a Ponte." />
+          <SectionHead eyebrow="Por onde começar" tone="tide" title="Conheça" accent="a Ponte" />
           <div className="mt-12 grid gap-3 sm:grid-cols-2">
             {home.paths.map((p, i) => (
               <Reveal key={p.href} delay={(i % 2) * 0.08}>

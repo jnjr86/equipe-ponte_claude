@@ -17,7 +17,7 @@ export function HomeHero() {
           transition={spring}
           className="font-display text-balance text-[clamp(2.6rem,7vw,4.5rem)] font-normal leading-[1.04] tracking-[-0.035em]"
         >
-          Psicanálise e trabalho <span className="font-extrabold text-leaf">em grupo.</span>
+          Psicanálise e trabalho <span className="font-extrabold text-leaf">em grupo</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

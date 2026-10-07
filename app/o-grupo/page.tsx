@@ -43,7 +43,7 @@ export default function GrupoPage() {
         <Container>
           <Reveal className="mx-auto flex max-w-[800px] flex-col items-center gap-4 text-center">
             <Eyebrow tone="tide">Por que em grupo?</Eyebrow>
-            <Title accent="com o outro.">Não nos constituímos sozinhos, mas a partir do outro e</Title>
+            <Title accent="com o outro">Não nos constituímos sozinhos, mas a partir do outro e</Title>
           </Reveal>
           <div className="mt-12 grid gap-4 lg:grid-cols-2">
             {grupo.why.map((p, i) => (
