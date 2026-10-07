@@ -93,18 +93,16 @@ export default function HomePage() {
       <section className="pt-24 sm:pt-32">
         <Container>
           <SectionHead eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte" text="A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia." />
-          <Reveal className="mt-12">
-            <figure className="overflow-hidden rounded-[32px] bg-white">
-              <div className="relative aspect-[1170/596]">
-                <Image src="/img/equipe.jpg" alt="Os sete integrantes da Equipe Ponte lado a lado, sorrindo, diante de uma parede com pinturas" fill sizes="(min-width: 1120px) 1088px, 100vw" className="object-cover" />
-              </div>
-              <figcaption className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-6">
-                <span className="text-[14px] text-ink-soft">{equipe.photoCaption}</span>
-                <Link href="/a-equipe" className="inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:text-leaf">
-                  Conhecer a equipe <IconArrow width={16} height={16} />
-                </Link>
-              </figcaption>
-            </figure>
+          <Reveal className="relative mt-12">
+            <div className="relative aspect-[1170/596] overflow-hidden rounded-[32px] bg-white">
+              <Image src="/img/equipe.jpg" alt="Os sete integrantes da Equipe Ponte lado a lado, sorrindo, diante de uma parede com pinturas" fill sizes="(min-width: 1120px) 1088px, 100vw" className="object-cover" />
+            </div>
+            <Sticker rotate={-2} className="max-sm:relative max-sm:mx-3 max-sm:-mt-5 sm:-bottom-6 sm:right-6 sm:max-w-[640px]">{equipe.photoCredit}</Sticker>
+          </Reveal>
+          <Reveal className="mt-8 flex justify-center sm:mt-12 sm:justify-start">
+            <Link href="/a-equipe" className="inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:text-leaf">
+              Conhecer a equipe <IconArrow width={16} height={16} />
+            </Link>
           </Reveal>
         </Container>
       </section>
