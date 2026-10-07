@@ -15,9 +15,9 @@ export function HomeHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={spring}
-          className="text-balance text-[clamp(2.6rem,7vw,4.5rem)] font-normal leading-[1.04] tracking-[-0.035em]"
+          className="font-display text-balance text-[clamp(2.6rem,7vw,4.5rem)] font-normal leading-[1.04] tracking-[-0.035em]"
         >
-          Psicanálise e trabalho <span className="text-leaf">em grupo.</span>
+          Psicanálise e trabalho <span className="font-extrabold text-leaf">em grupo.</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -95,7 +95,7 @@ export default function OficinasPage() {
               </Reveal>
               <Reveal delay={0.1} className="flex flex-col gap-4">
                 <span className={`self-start rounded-full px-3 py-1.5 text-[13px] font-medium ${tints[i]}`}>{String(i + 1).padStart(2, "0")} · Oficina</span>
-                <h2 className="text-[clamp(2rem,4.4vw,3.1rem)] leading-[1.1] tracking-[-0.035em]">{o.name}</h2>
+                <h2 className="font-display text-[clamp(2rem,4.4vw,3.1rem)] font-extrabold leading-[1.1] tracking-[-0.035em]">{o.name}</h2>
                 <div className="space-y-4 text-[15px] leading-relaxed text-ink-soft">
                   {o.paragraphs.map((p, j) => (
                     <p key={j}>{p}</p>

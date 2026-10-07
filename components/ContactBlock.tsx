@@ -29,8 +29,8 @@ export function ContactBlock({
         <Reveal className="grid items-center gap-10 rounded-[32px] bg-ink px-6 py-10 sm:px-10 sm:py-14 lg:grid-cols-2 lg:px-14">
           <div className="flex flex-col items-start gap-5">
             <span className="rounded-full bg-verde-01 px-3 py-1.5 text-[13px] font-medium text-ink">Rua Paris, 656 · Sumaré</span>
-            <h2 className="text-[clamp(2rem,4.4vw,3.1rem)] font-normal leading-[1.1] tracking-[-0.035em] text-paper">
-              {title} <span className="text-verde-01">{accent}</span>
+            <h2 className="font-display text-[clamp(2rem,4.4vw,3.1rem)] font-normal leading-[1.1] tracking-[-0.035em] text-paper">
+              {title} <span className="font-extrabold text-verde-01">{accent}</span>
             </h2>
             <p className="max-w-md text-[15px] leading-relaxed text-paper/70">{text}</p>
             {showButton && (

@@ -42,10 +42,10 @@ export function Title({
       ? "text-[clamp(2.6rem,6.4vw,4.5rem)] leading-[1.04] tracking-[-0.035em]"
       : "text-[clamp(2rem,4.4vw,3.1rem)] leading-[1.12] tracking-[-0.035em]";
   return (
-    <Tag className={`font-normal text-balance ${size} ${dark ? "text-paper" : "text-ink"} ${className}`}>
+    <Tag className={`font-display font-normal text-balance ${size} ${dark ? "text-paper" : "text-ink"} ${className}`}>
       {children}
       {children && accent ? " " : null}
-      {accent ? <span className={dark ? "text-verde-01" : "text-leaf"}>{accent}</span> : null}
+      {accent ? <span className={`font-extrabold ${dark ? "text-verde-01" : "text-leaf"}`}>{accent}</span> : null}
     </Tag>
   );
 }
