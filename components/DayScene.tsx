@@ -157,6 +157,22 @@ export function DayScene() {
             />
           )}
         </AnimatePresence>
+        {/* Cartão de legenda, exceto nas cenas com imagem própria */}
+        <AnimatePresence mode="wait">
+          {!sceneImages[scene.key] && (
+            <motion.div
+              key={scene.key}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.25 }}
+              className="absolute bottom-3 left-3 max-w-[78%] rounded-2xl bg-white/95 px-4 py-3 shadow-[0_8px_24px_-12px_rgba(8,30,41,0.4)] sm:bottom-5 sm:left-5"
+            >
+              <p className="text-[15px] font-semibold tracking-[-0.02em]">{scene.line}</p>
+              <p className="text-[13px] text-ink-muted">{scene.note}</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
