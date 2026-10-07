@@ -7,6 +7,7 @@ export const nav = [
   { href: "/o-grupo", label: "O Grupo" },
   { href: "/oficinas", label: "Oficinas" },
   { href: "/textos-e-publicacoes", label: "Textos e Publicações" },
+  { href: "/eventos-e-exposicoes", label: "Eventos e Exposições" },
   { href: "/contato", label: "Contato" },
 ];
 
