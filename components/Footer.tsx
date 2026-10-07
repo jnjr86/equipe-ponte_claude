@@ -1,33 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import { contact, nav } from "@/lib/content";
+import { IconMail } from "./Icons";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-ink/10">
-      <div className="mx-auto flex max-w-[1120px] flex-col gap-5 px-4 py-10 sm:px-6">
-        <Link href="/" className="self-start" aria-label="Equipe Ponte — início">
-          <Image src="/img/logo-horizontal.png" alt="Equipe Ponte" width={1436} height={597} className="h-16 w-auto sm:h-20" />
-        </Link>
-        <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[14px] text-ink-soft">
-          {nav.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href} className="hover:text-ink">
-                {item.label}
-              </Link>
+    <footer className="mt-24 bg-ink text-paper">
+      <div className="mx-auto max-w-[1120px] px-4 pb-8 pt-10 sm:px-6 sm:pt-12">
+        <div className="flex items-start justify-between gap-6">
+          <Link href="/" aria-label="Equipe Ponte — início">
+            <Image src="/img/logo-horizontal.png" alt="Equipe Ponte" width={1436} height={597} className="h-16 w-auto sm:h-20" />
+          </Link>
+          <a href="#" className="mt-5 shrink-0 text-[14px] text-paper/85 transition-colors hover:text-verde-01">
+            Voltar ao início ↑
+          </a>
+        </div>
+
+        <nav aria-label="Rodapé" className="mt-8">
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[14px]">
+            {nav.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="text-paper/85 transition-colors hover:text-verde-01">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="mt-8 flex items-center justify-between gap-4 border-t border-paper/20 pt-6">
+          <p className="text-[13px] text-paper/70">© {new Date().getFullYear()} Equipe Ponte</p>
+          <ul className="flex items-center gap-4">
+            <li>
+              <a href={`mailto:${contact.email}`} aria-label={`E-mail: ${contact.email}`} className="block text-paper/85 transition-colors hover:text-verde-01">
+                <IconMail width={24} height={24} />
+              </a>
             </li>
-          ))}
-        </ul>
-        <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[14px] text-ink-soft">
-          <li>
-            <a href={`mailto:${contact.email}`} className="hover:text-ink">
-              {contact.email}
-            </a>
-          </li>
-          <li>{contact.street}</li>
-          <li>{contact.cep}</li>
-        </ul>
-        <p className="text-[13px] text-ink-muted">© Equipe Ponte</p>
+          </ul>
+        </div>
       </div>
     </footer>
   );
