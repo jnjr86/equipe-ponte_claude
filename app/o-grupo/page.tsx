@@ -41,7 +41,7 @@ export default function GrupoPage() {
 
       <section className="pt-24 sm:pt-32">
         <Container>
-          <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+          <Reveal className="mx-auto flex max-w-[800px] flex-col items-center gap-4 text-center">
             <Eyebrow tone="tide">Por que em grupo?</Eyebrow>
             <Title accent="com o outro.">Não nos constituímos sozinhos, mas a partir do outro e</Title>
           </Reveal>
