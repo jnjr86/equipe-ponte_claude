@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function GrupoPage() {
   return (
     <>
-      <PageHero eyebrow="O Grupo" tone="sage" title="Quartas e sextas," accent="três horas juntos" text={grupo.schedule} />
+      <PageHero eyebrow="O Grupo" tone="sage" title="Quartas e sextas," accent="três horas juntos" text={grupo.schedule} wideText />
 
       <section>
         <Container className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
