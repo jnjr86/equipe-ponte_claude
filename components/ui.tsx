@@ -58,6 +58,7 @@ export function SectionHead({
   accent,
   text,
   align = "center",
+  textWidth,
 }: {
   eyebrow: string;
   tone?: Tone;
@@ -65,13 +66,15 @@ export function SectionHead({
   accent?: ReactNode;
   text?: ReactNode;
   align?: "center" | "left";
+  /** Largura máxima do texto de apoio, ex.: "max-w-[750px]" (padrão 576px). */
+  textWidth?: string;
 }) {
   const center = align === "center";
   return (
-    <Reveal className={`flex flex-col gap-4 ${center ? "mx-auto max-w-2xl items-center text-center" : "items-start"}`}>
+    <Reveal className={`flex flex-col gap-4 ${center ? `mx-auto items-center text-center ${textWidth ? "max-w-[800px]" : "max-w-2xl"}` : "items-start"}`}>
       <Eyebrow tone={tone}>{eyebrow}</Eyebrow>
       <Title accent={accent}>{title}</Title>
-      {text ? <p className="max-w-xl text-[15px] leading-relaxed tracking-[-0.01em] text-ink-soft">{text}</p> : null}
+      {text ? <p className={`${textWidth ?? "max-w-xl"} text-[15px] leading-relaxed tracking-[-0.01em] text-ink-soft`}>{text}</p> : null}
     </Reveal>
   );
 }

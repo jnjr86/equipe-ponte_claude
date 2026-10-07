@@ -92,7 +92,7 @@ export default function HomePage() {
       {/* A equipe */}
       <section className="pt-24 sm:pt-32">
         <Container>
-          <SectionHead eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte" text="A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia." />
+          <SectionHead eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte" text="A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia." textWidth="max-w-[750px]" />
           <Reveal className="relative mt-12">
             <div className="relative aspect-[1170/596] overflow-hidden rounded-[32px] bg-white">
               <Image src="/img/equipe.jpg" alt="Os sete integrantes da Equipe Ponte lado a lado, sorrindo, diante de uma parede com pinturas" fill sizes="(min-width: 1120px) 1088px, 100vw" className="object-cover" />
