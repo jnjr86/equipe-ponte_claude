@@ -142,7 +142,7 @@ export function Sticker({ children, className = "", rotate = -6 }: { children: R
       transition={{ type: "spring", stiffness: 260, damping: 14, delay: 0.3 }}
       className={`absolute inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-[13px] font-medium text-ink shadow-[0_8px_24px_-8px_rgba(8,30,41,0.35)] ${className}`}
     >
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-leaf" aria-hidden>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-leaf" aria-hidden>
         <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
         <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
       </svg>

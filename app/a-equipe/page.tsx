@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ContactBlock } from "@/components/ContactBlock";
 import { PageHero } from "@/components/PageHero";
-import { Container, Reveal, Title } from "@/components/ui";
+import { Container, Reveal, Sticker, Title } from "@/components/ui";
 import { equipe } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -28,15 +28,13 @@ export default function EquipePage() {
 
       <section>
         <Container>
-          <Reveal>
-            <figure className="overflow-hidden rounded-[32px] bg-white">
-              <div className="relative aspect-[1170/596]">
-                <Image src="/img/equipe.jpg" alt="Os sete integrantes da Equipe Ponte lado a lado, sorrindo, diante de uma parede com pinturas" fill priority sizes="(min-width: 1120px) 1088px, 100vw" className="object-cover" />
-              </div>
-              <figcaption className="px-5 py-4 text-[14px] text-ink-soft sm:px-6">{equipe.photoCaption}</figcaption>
-            </figure>
+          <Reveal className="relative">
+            <div className="relative aspect-[1170/596] overflow-hidden rounded-[32px] bg-white">
+              <Image src="/img/equipe.jpg" alt="Os sete integrantes da Equipe Ponte lado a lado, sorrindo, diante de uma parede com pinturas" fill priority sizes="(min-width: 1120px) 1088px, 100vw" className="object-cover" />
+            </div>
+            <Sticker rotate={-2} className="max-sm:relative max-sm:mx-3 max-sm:-mt-5 sm:-bottom-6 sm:right-6 sm:max-w-[640px]">{equipe.photoCredit}</Sticker>
           </Reveal>
-          <Reveal className="mx-auto mt-10 max-w-3xl rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
+          <Reveal className="mx-auto mt-14 max-w-3xl rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
             <p>
               A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia e que trabalham por meio de diferentes dispositivos: análise (terapia) em consultório, acompanhamento terapêutico e atendimento em grupo, sendo este último o trabalho específico da Equipe Ponte, conforme melhor explicitado nos outros links do site{" "}
               <Link href="/o-grupo" className="font-medium text-leaf underline underline-offset-4">

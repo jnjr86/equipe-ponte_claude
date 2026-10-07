@@ -175,6 +175,7 @@ export const equipe = {
   intro:
     "A Ponte surgiu em 2012 e tem sua equipe formada por psicanalistas graduadas em Psicologia e que trabalham por meio de diferentes dispositivos: análise (terapia) em consultório, acompanhamento terapêutico e atendimento em grupo, sendo este último o trabalho específico da Equipe Ponte, conforme melhor explicitado nos outros links do site o grupo e oficinas.",
   photoCaption: "Giovanna, Julia, Ligia, Marcela, Silvia, Ivens e Manuela — A Equipe",
+  photoCredit: "Foto: Giovanna, Julia, Ligia, Marcela, Silvia, Ivens e Manuela - A Equipe no XV Congresso Internacional de AT (Setembro/2026)",
   members: [
     { name: "Julia Fatio Vasconcelos", role: "Membro-fundadora e coordenadora dos grupos da Equipe Ponte" },
     { name: "Manuela B.C.", role: "Membro-fundadora e coordenadora dos grupos da Equipe Ponte" },
