@@ -5,7 +5,7 @@ import { Button, Container, Reveal } from "./ui";
 /** Bloco escuro de fechamento: título, texto de apoio e botão, centralizados. */
 export function ContactBlock({
   title = "Fale",
-  accent = "conosco.",
+  accent = "conosco",
   text = "Se você tem interesse em falar conosco, acesse o link contato para nos enviar um e-mail ou entre em contato por meio dos telefones e redes sociais.",
   showButton = true,
 }: {
