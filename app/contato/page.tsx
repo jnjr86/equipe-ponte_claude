@@ -18,7 +18,7 @@ export default function ContatoPage() {
         eyebrow="Contato"
         tone="mint"
         title="Fale"
-        accent="conosco."
+        accent="conosco"
         text="A Equipe Ponte fica na rua Paris, 656 – Sumaré (CEP 01257-040), bem próximo ao metrô Vila Madalena."
       />
 

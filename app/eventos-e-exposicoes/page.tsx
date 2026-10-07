@@ -16,7 +16,7 @@ export default function EventosPage() {
         eyebrow="Eventos e Exposições"
         tone="sage"
         title="Eventos e"
-        accent="exposições."
+        accent="exposições"
       />
       <section>
         <Container>

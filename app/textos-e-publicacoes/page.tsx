@@ -16,7 +16,7 @@ export default function TextosPage() {
         eyebrow="Textos e Publicações"
         tone="sage"
         title="Fundamentação"
-        accent="teórica."
+        accent="teórica"
         text="A fundamentação teórica para a construção desse trabalho ao redor do público-alvo em questão, das oficinas, assim como outros textos e publicações da equipe e seus membros."
       />
       <section>

@@ -24,7 +24,7 @@ const initials = (name: string) =>
 export default function EquipePage() {
   return (
     <>
-      <PageHero eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte." />
+      <PageHero eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte" />
 
       <section>
         <Container>
