@@ -21,7 +21,7 @@ export function ContactBlock({
           <h2 className="font-display text-[clamp(2rem,4.4vw,3.1rem)] font-normal leading-[1.1] tracking-[-0.035em] text-paper">
             {title} <span className="font-extrabold text-verde-01">{accent}</span>
           </h2>
-          <p className="max-w-md text-[15px] leading-relaxed text-paper/70">{text}</p>
+          <p className="max-w-[650px] text-[15px] leading-relaxed text-paper/70">{text}</p>
           {showButton && (
             <Button href="/contato" variant="light" className="mt-2">
               Escreva para nós

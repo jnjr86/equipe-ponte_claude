@@ -53,7 +53,7 @@ export default function GrupoPage() {
               </Reveal>
             ))}
           </div>
-          <Reveal className="mx-auto mt-12 flex max-w-xl flex-col items-center gap-6 text-center">
+          <Reveal className="mx-auto mt-12 flex max-w-[650px] flex-col items-center gap-6 text-center">
             <p className="text-[15px] leading-relaxed text-ink-soft">{grupo.toOficinas}</p>
             <Button href="/oficinas">Ver as oficinas</Button>
           </Reveal>
