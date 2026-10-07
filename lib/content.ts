@@ -162,7 +162,7 @@ export const oficinas: {
 // "Ela toca, a dança leva, o corpo mexe, a arte faz falar, o teatro põe em cena,
 // o grupo enlaça e a Psicanálise escuta e articula." — frase da aba Oficinas
 export const scenes = [
-  { key: "musica", label: "Música", verb: "toca", line: "A música toca", note: "permeia todas as oficinas" },
+  { key: "musica", label: "Música", verb: "permeia todas as oficinas", line: "A música toca", note: "permeia todas as oficinas" },
   { key: "danca", label: "Dança", verb: "leva", line: "A dança leva", note: "sintonia com o ritmo, a harmonia e a melodia" },
   { key: "corpo", label: "Corpo", verb: "mexe", line: "O corpo mexe", note: "uma nova presença no tempo e no espaço" },
   { key: "arte", label: "Arte", verb: "faz falar", line: "A arte faz falar", note: "dar voz ao sujeito" },
