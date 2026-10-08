@@ -29,7 +29,7 @@ export function Nav() {
         className="relative mx-auto flex max-w-[1180px] items-center gap-4 rounded-full bg-white/90 py-2 pl-3 pr-2 shadow-[0_10px_30px_-12px_rgba(8,30,41,0.25)] backdrop-blur-md"
       >
         <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Equipe Ponte — início">
-          <Image src="/img/logo.png" alt="" width={44} height={44} className="rounded-full" priority />
+          <Image src="/img/logo.png" alt="" width={64} height={64} className="rounded-full" priority />
           <span className="text-[17px] font-semibold tracking-[-0.03em]">Equipe Ponte</span>
         </Link>
 
