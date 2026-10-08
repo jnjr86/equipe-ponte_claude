@@ -71,14 +71,6 @@ const art: Record<string, React.ReactNode> = {
       </g>
     </g>
   ),
-  grupo: (
-    <g>
-      <path d="M150 158q25 22 50 0M200 158q25 22 50 0" fill="none" stroke={INK} strokeWidth="6" strokeLinecap="round" />
-      <Person cx={135} base={200} w={56} h={62} fill="#6ec597" />
-      <Person cx={200} base={200} w={62} h={82} fill="#fff" />
-      <Person cx={265} base={200} w={56} h={66} fill="#2c5d78" />
-    </g>
-  ),
 };
 
 const sceneImages: Record<string, { src: string; alt: string }> = {
@@ -105,7 +97,7 @@ export function DayScene() {
               role="tab"
               aria-selected={on}
               onClick={() => setActive(i)}
-              className={`relative rounded-2xl px-4 py-3.5 text-left transition-colors ${on ? "text-paper" : "text-ink hover:bg-paper"}`}
+              className={`relative rounded-2xl px-4 py-3.5 text-left transition-colors ${scenes.length % 2 && i === scenes.length - 1 ? "col-span-2" : ""} ${on ? "text-paper" : "text-ink hover:bg-paper"}`}
             >
               {on && <motion.span layoutId="scene-pill" className="absolute inset-0 rounded-2xl bg-ink" transition={{ type: "spring", stiffness: 320, damping: 30 }} />}
               <span className="relative block text-[17px] font-semibold tracking-[-0.02em]">{s.label}</span>

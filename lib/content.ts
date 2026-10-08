@@ -167,7 +167,6 @@ export const scenes = [
   { key: "corpo", label: "Corpo", verb: "mexe", line: "O corpo mexe", note: "uma nova presença no tempo e no espaço" },
   { key: "arte", label: "Arte", verb: "faz falar", line: "A arte faz falar", note: "dar voz ao sujeito" },
   { key: "teatro", label: "Teatro", verb: "fazer-se ver e escutar pela boca de um Outro", line: "O teatro põe em cena", note: "fazer-se ver e escutar pela boca de um Outro" },
-  { key: "grupo", label: "Grupo", verb: "enlaça", line: "O grupo enlaça", note: "não nos constituímos sozinhos" },
 ] as const;
 
 export const equipe = {
