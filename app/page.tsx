@@ -144,11 +144,6 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
-          <Reveal className="mt-10 text-center text-[15px] text-ink-soft">
-            Atenciosamente,
-            <br />
-            <span className="font-semibold text-ink">A Equipe</span>
-          </Reveal>
         </Container>
       </section>
 
