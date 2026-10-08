@@ -80,7 +80,7 @@ export default function HomePage() {
         <Container className="flex flex-col gap-10">
           <Reveal className="flex flex-col items-start gap-4">
             <Eyebrow tone="sage">O grupo</Eyebrow>
-            <Title accent="três horas juntos" className="max-w-xl">Quartas e sextas,</Title>
+            <Title accent="três horas juntos" className="max-w-[1072px]">Quartas e sextas,</Title>
             <p className="max-w-[1072px] text-[15px] leading-relaxed text-ink-soft">{grupo.schedule}</p>
           </Reveal>
           <Reveal delay={0.1}>
