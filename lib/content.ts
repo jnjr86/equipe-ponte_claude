@@ -190,7 +190,7 @@ export const equipe = {
 };
 
 export const gallery = [
-  { src: "/img/obra-bianca-t.jpg", label: "Obra de Bianca T.", alt: "Obra emoldurada com formas coloridas, círculos concêntricos e pinceladas em várias cores" },
+  { src: "/img/oficina-teatro.jpg", label: "Teatro", alt: "Tela de projeção com o título Teatros da Giulia entre cortinas pretas" },
   { src: "/img/oficina-pintura.jpg", label: "Pintura", alt: "Quatro pinturas coloridas expostas em uma parede branca" },
   { src: "/img/oficina-musica.jpg", label: "Música", alt: "Trabalhos com desenhos de fones de ouvido expostos na parede" },
   { src: "/img/oficina-danca.jpg", label: "Dança", alt: "Pessoa dançando em um palco com leques de tecido rosa" },
