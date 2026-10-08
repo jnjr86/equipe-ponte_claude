@@ -65,7 +65,7 @@ export default function HomePage() {
             {oficinas.map((o, i) => (
               <GardenCard key={o.id} id={o.id} index={i} name={o.name} lead={o.lead} href={`/oficinas#${o.id}`} />
             ))}
-            <Reveal className="flex flex-col justify-between gap-6 rounded-3xl bg-ink p-6 text-paper sm:col-span-2 lg:col-span-1">
+            <Reveal className="flex flex-col justify-center gap-7 rounded-3xl bg-ink p-8 text-paper sm:col-span-2 sm:p-10 lg:col-span-1">
               <p className="text-[15px] leading-relaxed text-paper/75">{home.notPedagogic}</p>
               <Button href="/oficinas" variant="light" className="self-start">
                 Ver as oficinas
