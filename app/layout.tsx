@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const cabinet = localFont({
   src: [
     { path: "./fonts/CabinetGrotesk-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/CabinetGrotesk-Bold.woff2", weight: "700", style: "normal" },
     { path: "./fonts/CabinetGrotesk-Extrabold.woff2", weight: "800", style: "normal" },
   ],
   variable: "--font-cabinet",

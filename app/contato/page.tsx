@@ -42,7 +42,7 @@ export default function ContatoPage() {
       <section className="pt-16 sm:pt-24">
         <Container className="grid items-stretch gap-4 lg:grid-cols-2">
           <Reveal delay={0.1} className="rounded-3xl bg-white p-6 sm:p-8 lg:order-2">
-            <h2 className="text-[22px] tracking-[-0.03em]">Escreva para nós</h2>
+            <h2 className="font-display text-[26px] font-bold tracking-[-0.02em]">Escreva para nós</h2>
             <p className="mt-1 text-[14px] text-ink-muted">As mensagens chegam em {contact.email}.</p>
             <ContactForm />
           </Reveal>
