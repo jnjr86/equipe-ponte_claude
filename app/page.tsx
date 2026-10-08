@@ -116,7 +116,7 @@ export default function HomePage() {
               <Reveal
                 key={g.src}
                 delay={(i % 4) * 0.06}
-                className={`group relative overflow-hidden rounded-3xl bg-white ${["row-span-2 lg:col-span-2", "", "", "lg:col-span-2", "lg:col-span-2", "col-span-2"][i] ?? ""}`}
+                className={`group relative overflow-hidden rounded-3xl bg-white ${["row-span-2 lg:col-span-2", "", "", "", ""][i] ?? ""}`}
               >
                 <Image src={g.src} alt={g.alt} fill sizes="(min-width: 1024px) 540px, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 <span className="absolute bottom-3 left-3 rounded-full bg-white/95 px-3 py-1.5 text-[12px] font-medium">{g.label}</span>

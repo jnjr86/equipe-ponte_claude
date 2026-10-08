@@ -194,7 +194,6 @@ export const gallery = [
   { src: "/img/obra-bianca-t.jpg", label: "Obra de Bianca T.", alt: "Obra emoldurada com formas coloridas, círculos concêntricos e pinceladas em várias cores" },
   { src: "/img/oficina-pintura.jpg", label: "Pintura", alt: "Quatro pinturas coloridas expostas em uma parede branca" },
   { src: "/img/oficina-musica.jpg", label: "Música", alt: "Trabalhos com desenhos de fones de ouvido expostos na parede" },
-  { src: "/img/sarau-2025.jpg", label: "Sarau 2025", alt: "Sarau à noite em um quintal, com apresentação diante de um pano vermelho" },
   { src: "/img/oficina-danca.jpg", label: "Dança", alt: "Pessoa dançando em um palco com leques de tecido rosa" },
   { src: "/img/obra-pedro-m.jpg", label: "Obra de Pedro M.", alt: "Desenho colorido de um grupo de pessoas lado a lado" },
 ];
