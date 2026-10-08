@@ -85,6 +85,7 @@ const sceneImages: Record<string, { src: string; alt: string }> = {
   musica: { src: "/img/cena-musica.jpg", alt: "Ilustração: pessoa sorridente de fones de ouvido abraçando um disco, diante de uma playlist de músicas" },
   danca: { src: "/img/cena-danca.jpg", alt: "Ilustração: jovem de fones de ouvido dançando, cercado de notas musicais" },
   culinaria: { src: "/img/cena-culinaria.jpg", alt: "Ilustração: jovem de avental cozinhando, com espátula e frigideira, ingredientes saltando" },
+  arte: { src: "/img/cena-pintura.jpg", alt: "Ilustração: jovem pintando uma tela no cavalete, segurando pincel e paleta de cores" },
   teatro: { src: "/img/cena-teatro.jpg", alt: "Ilustração: jovem com figurino de teatro saltando, segurando as máscaras da comédia e da tragédia" },
 };
 
