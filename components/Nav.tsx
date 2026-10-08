@@ -34,7 +34,7 @@ export function Nav() {
         </Link>
 
         <ul className="mx-auto hidden items-center gap-0.5 xl:flex">
-          {nav.slice(1).map((item) => {
+          {nav.slice(1).filter((item) => item.href !== "/contato").map((item) => {
             const active = pathname === item.href;
             return (
               <li key={item.href}>
