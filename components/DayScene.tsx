@@ -79,15 +79,6 @@ const art: Record<string, React.ReactNode> = {
       <Person cx={265} base={200} w={56} h={66} fill="#2c5d78" />
     </g>
   ),
-  psicanalise: (
-    <g>
-      <path d="M118 80h120a18 18 0 0 1 18 18v40a18 18 0 0 1-18 18h-70l-30 24v-24h-20a18 18 0 0 1-18-18V98a18 18 0 0 1 18-18z" fill="#fff" stroke={INK} strokeWidth="3" />
-      <path d="M216 120h66a16 16 0 0 1 16 16v34a16 16 0 0 1-16 16h-8v20l-24-20h-34a16 16 0 0 1-16-16v-34a16 16 0 0 1 16-16z" fill="#6ec597" stroke={INK} strokeWidth="3" />
-      <circle cx="152" cy="118" r="5" fill={INK} />
-      <circle cx="176" cy="118" r="5" fill={INK} />
-      <circle cx="200" cy="118" r="5" fill={INK} />
-    </g>
-  ),
 };
 
 const sceneImages: Record<string, { src: string; alt: string }> = {
@@ -114,7 +105,7 @@ export function DayScene() {
               role="tab"
               aria-selected={on}
               onClick={() => setActive(i)}
-              className={`relative rounded-2xl px-4 py-3.5 text-left transition-colors ${i === scenes.length - 1 ? "col-span-2" : ""} ${on ? "text-paper" : "text-ink hover:bg-paper"}`}
+              className={`relative rounded-2xl px-4 py-3.5 text-left transition-colors ${on ? "text-paper" : "text-ink hover:bg-paper"}`}
             >
               {on && <motion.span layoutId="scene-pill" className="absolute inset-0 rounded-2xl bg-ink" transition={{ type: "spring", stiffness: 320, damping: 30 }} />}
               <span className="relative block text-[17px] font-semibold tracking-[-0.02em]">{s.label}</span>

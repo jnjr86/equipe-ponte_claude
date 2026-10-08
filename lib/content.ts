@@ -166,9 +166,8 @@ export const scenes = [
   { key: "danca", label: "Dança", verb: "sintonia com o ritmo, a harmonia e a melodia", line: "A dança leva", note: "sintonia com o ritmo, a harmonia e a melodia" },
   { key: "corpo", label: "Corpo", verb: "mexe", line: "O corpo mexe", note: "uma nova presença no tempo e no espaço" },
   { key: "arte", label: "Arte", verb: "faz falar", line: "A arte faz falar", note: "dar voz ao sujeito" },
-  { key: "teatro", label: "Teatro", verb: "põe em cena", line: "O teatro põe em cena", note: "fazer-se ver e escutar pela boca de um Outro" },
+  { key: "teatro", label: "Teatro", verb: "fazer-se ver e escutar pela boca de um Outro", line: "O teatro põe em cena", note: "fazer-se ver e escutar pela boca de um Outro" },
   { key: "grupo", label: "Grupo", verb: "enlaça", line: "O grupo enlaça", note: "não nos constituímos sozinhos" },
-  { key: "psicanalise", label: "Psicanálise", verb: "escuta e articula", line: "A Psicanálise escuta e articula", note: "a escuta e as intervenções do psicanalista" },
 ] as const;
 
 export const equipe = {
