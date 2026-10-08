@@ -92,6 +92,7 @@ const art: Record<string, React.ReactNode> = {
 
 const sceneImages: Record<string, { src: string; alt: string }> = {
   musica: { src: "/img/cena-musica.jpg", alt: "Ilustração: pessoa sorridente de fones de ouvido abraçando um disco, diante de uma playlist de músicas" },
+  danca: { src: "/img/cena-danca.jpg", alt: "Ilustração: jovem de fones de ouvido dançando, cercado de notas musicais" },
 };
 
 /** Cena interativa: escolha uma frase e o "dia" da ilustração muda junto. */
