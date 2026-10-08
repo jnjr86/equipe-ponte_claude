@@ -195,5 +195,5 @@ export const gallery = [
   { src: "/img/oficina-pintura.jpg", label: "Pintura", alt: "Quatro pinturas coloridas expostas em uma parede branca" },
   { src: "/img/oficina-musica.jpg", label: "Música", alt: "Trabalhos com desenhos de fones de ouvido expostos na parede" },
   { src: "/img/oficina-danca.jpg", label: "Dança", alt: "Pessoa dançando em um palco com leques de tecido rosa" },
-  { src: "/img/obra-pedro-m.jpg", label: "Obra de Pedro M.", alt: "Desenho colorido de um grupo de pessoas lado a lado" },
+  { src: "/img/galeria-culinaria.jpg", label: "Culinária", alt: "Duas participantes preparando uma massa na cozinha, vistas de costas" },
 ];
