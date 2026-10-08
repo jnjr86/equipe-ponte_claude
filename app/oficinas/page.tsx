@@ -23,7 +23,13 @@ export default function OficinasPage() {
         tone="tide"
         title="A arte faz falar,"
         accent="o grupo enlaça"
-        text="Ela toca, a dança leva, o corpo mexe, a arte faz falar, o teatro põe em cena, o grupo enlaça e a Psicanálise escuta e articula."
+        text={
+          <>
+            Ela toca, a dança leva, o corpo mexe, a arte faz falar, o teatro põe em cena,
+            <br />
+            o grupo enlaça e a Psicanálise escuta e articula.
+          </>
+        }
       />
 
       <section>
