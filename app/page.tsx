@@ -78,10 +78,10 @@ export default function HomePage() {
       {/* O grupo — cena interativa */}
       <section className="pt-24 sm:pt-32">
         <Container className="flex flex-col gap-10">
-          <Reveal className="flex max-w-xl flex-col items-start gap-4">
+          <Reveal className="flex flex-col items-start gap-4">
             <Eyebrow tone="sage">O grupo</Eyebrow>
-            <Title accent="três horas juntos">Quartas e sextas,</Title>
-            <p className="text-[15px] leading-relaxed text-ink-soft">{grupo.schedule}</p>
+            <Title accent="três horas juntos" className="max-w-xl">Quartas e sextas,</Title>
+            <p className="max-w-[1072px] text-[15px] leading-relaxed text-ink-soft">{grupo.schedule}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <DayScene />
