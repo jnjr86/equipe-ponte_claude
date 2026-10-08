@@ -45,7 +45,15 @@ const art: Record<string, React.ReactNode> = {
       </g>
     </g>
   ),
-  corpo: <Person cx={200} base={200} w={76} h={86} fill="#a7b7c7" arms="up" />,
+  culinaria: (
+    <g transform="translate(0 -22)">
+      <path d="M150 100q-10-12 0-24t0-24M250 100q-10-12 0-24t0-24" fill="none" stroke={INK} strokeWidth="5" strokeLinecap="round" />
+      <rect x="112" y="126" width="176" height="22" rx="11" fill={INK} />
+      <path d="M136 120h128v48a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40z" fill="#2c5d78" stroke={INK} strokeWidth="3" />
+      <rect x="126" y="104" width="148" height="20" rx="10" fill="#fff" stroke={INK} strokeWidth="3" />
+      <circle cx="200" cy="98" r="9" fill="#6ec597" stroke={INK} strokeWidth="3" />
+    </g>
+  ),
   arte: (
     <g>
       <path d="M160 200l24-110M240 200l-24-110M200 90v110" stroke={INK} strokeWidth="6" strokeLinecap="round" />

@@ -164,7 +164,7 @@ export const oficinas: {
 export const scenes = [
   { key: "musica", label: "Música", verb: "permeia todas as oficinas", line: "A música toca", note: "permeia todas as oficinas" },
   { key: "danca", label: "Dança", verb: "sintonia com o ritmo, a harmonia e a melodia", line: "A dança leva", note: "sintonia com o ritmo, a harmonia e a melodia" },
-  { key: "corpo", label: "Corpo", verb: "mexe", line: "O corpo mexe", note: "uma nova presença no tempo e no espaço" },
+  { key: "culinaria", label: "Culinária", verb: "a preparação do lanche prolonga a experiência", line: "Mão na massa", note: "a preparação do lanche prolonga a experiência" },
   { key: "arte", label: "Pintura", verb: "dar voz ao sujeito", line: "A arte faz falar", note: "dar voz ao sujeito" },
   { key: "teatro", label: "Teatro", verb: "fazer-se ver e escutar pela boca de um Outro", line: "O teatro põe em cena", note: "fazer-se ver e escutar pela boca de um Outro" },
 ] as const;
