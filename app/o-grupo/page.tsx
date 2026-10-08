@@ -17,7 +17,9 @@ export default function GrupoPage() {
           <>
             {grupo.schedule.split("feiras. ")[0]}feiras.
             <br />
-            {grupo.schedule.split("feiras. ")[1]}
+            {grupo.schedule.split("feiras. ")[1].split("expressiva ")[0]}expressiva
+            <br />
+            {grupo.schedule.split("expressiva ")[1]}
           </>
         }
         wideText
