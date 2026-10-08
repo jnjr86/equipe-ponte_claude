@@ -71,9 +71,9 @@ export function SectionHead({
 }) {
   const center = align === "center";
   return (
-    <Reveal className={`flex flex-col gap-4 ${center ? `mx-auto items-center text-center ${textWidth ? "max-w-[800px]" : "max-w-2xl"}` : "items-start"}`}>
+    <Reveal className={`flex flex-col gap-4 ${center ? `mx-auto items-center text-center ${textWidth ? "max-w-[1072px]" : "max-w-2xl"}` : "items-start"}`}>
       <Eyebrow tone={tone}>{eyebrow}</Eyebrow>
-      <Title accent={accent}>{title}</Title>
+      <Title accent={accent} className="max-w-2xl">{title}</Title>
       {text ? <p className={`${textWidth ?? "max-w-xl"} text-[15px] leading-relaxed tracking-[-0.01em] text-ink-soft`}>{text}</p> : null}
     </Reveal>
   );

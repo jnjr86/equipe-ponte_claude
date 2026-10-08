@@ -60,7 +60,7 @@ export default function HomePage() {
       {/* Oficinas */}
       <section className="pt-24 sm:pt-32" id="oficinas">
         <Container>
-          <SectionHead eyebrow="Oficinas" tone="tide" title="Cinco oficinas," accent="um só grupo" text={home.offer} />
+          <SectionHead eyebrow="Oficinas" tone="tide" title="Cinco oficinas," accent="um só grupo" text={home.offer} textWidth="max-w-[1060px]" />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {oficinas.map((o, i) => (
               <GardenCard key={o.id} id={o.id} index={i} name={o.name} lead={o.lead} href={`/oficinas#${o.id}`} />
