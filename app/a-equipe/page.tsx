@@ -29,7 +29,7 @@ export default function EquipePage() {
       <section className="pb-16 sm:pb-24">
         <Container>
           <Reveal>
-            <figure className="mx-auto max-w-[880px]">
+            <figure className="relative mx-auto max-w-[880px]">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[32px] bg-white">
                 <Image
                   src="/img/lista-presencas-pedro-m.jpg"
@@ -40,7 +40,11 @@ export default function EquipePage() {
                   className="object-cover"
                 />
               </div>
-              <figcaption className="mt-4 text-left text-[14px] text-ink-soft">Lista de presenças e ausências no grupo Ponte - Pedro M.</figcaption>
+              <figcaption>
+                <Sticker rotate={-2} className="max-sm:relative max-sm:mx-3 max-sm:-mt-5 sm:-bottom-6 sm:right-6">
+                  Lista de presenças e ausências no grupo Ponte - Pedro M.
+                </Sticker>
+              </figcaption>
             </figure>
           </Reveal>
         </Container>
