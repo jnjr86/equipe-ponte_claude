@@ -26,6 +26,26 @@ export default function EquipePage() {
     <>
       <PageHero eyebrow="A Equipe" tone="mist" title="Quem faz" accent="a Ponte" />
 
+      <section className="pb-16 sm:pb-24">
+        <Container>
+          <Reveal>
+            <figure className="mx-auto max-w-[880px]">
+              <div className="relative aspect-[1672/941] overflow-hidden rounded-[32px] bg-white">
+                <Image
+                  src="/img/lista-presencas-pedro-m.jpg"
+                  alt="Desenho em canetinha azul, marrom e amarela com dezenas de figuras de pessoas e seus nomes, e a frase Saudades de vocês"
+                  fill
+                  priority
+                  sizes="(min-width: 928px) 880px, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-4 text-left text-[14px] text-ink-soft">Lista de presenças e ausências no grupo Ponte - Pedro M.</figcaption>
+            </figure>
+          </Reveal>
+        </Container>
+      </section>
+
       <section>
         <Container>
           <Reveal className="relative">
