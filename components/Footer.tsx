@@ -3,6 +3,7 @@ import Link from "next/link";
 import { contact, nav } from "@/lib/content";
 import { SocialEmail, SocialFacebook, SocialInstagram } from "./Icons";
 import { WhatsAppMenu } from "./WhatsAppMenu";
+import { BackToTop } from "./BackToTop";
 
 const social = [
   { href: `mailto:${contact.email}`, label: `E-mail: ${contact.email}`, Icon: SocialEmail },
@@ -18,9 +19,7 @@ export function Footer() {
           <Link href="/" aria-label="Equipe Ponte — início">
             <Image src="/img/logo-horizontal.png" alt="Equipe Ponte" width={1436} height={597} className="h-16 w-auto sm:h-20" />
           </Link>
-          <a href="#" className="mt-5 shrink-0 text-[14px] text-paper/85 transition-colors hover:text-verde-01">
-            Voltar ao início ↑
-          </a>
+          <BackToTop className="mt-5 shrink-0 text-[14px] text-paper/85 transition-colors hover:text-verde-01" />
         </div>
 
         <nav aria-label="Rodapé" className="mt-8">
