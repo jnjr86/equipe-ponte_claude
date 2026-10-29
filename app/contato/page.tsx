@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
-import { IconMail, IconPin, IconTrain } from "@/components/Icons";
+import { IconMail, IconPhone, IconPin, IconTrain } from "@/components/Icons";
 import { PageHero } from "@/components/PageHero";
 import { Container, Reveal, Sticker } from "@/components/ui";
 import { contact } from "@/lib/content";
@@ -69,6 +69,26 @@ export default function ContatoPage() {
                   <a href={`mailto:${contact.email}`} className="underline decoration-paper/30 underline-offset-4 hover:decoration-verde-01">
                     {contact.email}
                   </a>
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-0.5 text-verde-01"><IconPhone /></span>
+                <span>
+                  <span className="block text-[11px] font-semibold uppercase tracking-[0.08em] text-paper/50">Telefones</span>
+                  {contact.phones.map((ph, i) => (
+                    <span key={ph.whatsapp}>
+                      {i > 0 && <span className="mx-2 text-paper/40">|</span>}
+                      <a
+                        href={ph.whatsapp}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Conversar pelo WhatsApp: ${ph.label}`}
+                        className="underline decoration-paper/30 underline-offset-4 hover:decoration-verde-01"
+                      >
+                        {ph.label}
+                      </a>
+                    </span>
+                  ))}
                 </span>
               </li>
             </ul>

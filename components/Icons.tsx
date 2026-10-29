@@ -117,3 +117,9 @@ export const SocialInstagram = (p: P) => (
     </g>
   </svg>
 );
+
+export const IconPhone = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 7.5 7.5l1.5-2 4 1.5v3A2 2 0 0 1 18.5 21 15.5 15.5 0 0 1 3 5.5 2 2 0 0 1 5 3.5Z" />
+  </svg>
+);
