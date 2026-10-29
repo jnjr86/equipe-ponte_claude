@@ -45,7 +45,7 @@ export function Title({
     <Tag className={`font-display font-normal text-balance ${size} ${dark ? "text-paper" : "text-ink"} ${className}`}>
       {children}
       {children && accent ? " " : null}
-      {accent ? <span className={`font-extrabold ${dark ? "text-verde-01" : "text-leaf"}`}>{accent}</span> : null}
+      {accent ? <span>{accent}</span> : null}
     </Tag>
   );
 }
