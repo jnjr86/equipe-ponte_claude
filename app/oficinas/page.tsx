@@ -33,14 +33,14 @@ export default function OficinasPage() {
       />
 
       <section>
-        <Container className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
-          <Reveal className="relative lg:sticky lg:top-28">
-            <div className="relative aspect-[4/3.4] overflow-hidden rounded-[32px] bg-white">
-              <Image src="/img/obra-bianca-t.jpg" alt="Obra emoldurada com formas coloridas, círculos concêntricos e pequenas pinceladas em várias cores" fill sizes="(min-width: 1024px) 540px, 100vw" className="object-cover" />
+        <Container className="flex flex-col items-center gap-14 sm:gap-16">
+          <Reveal className="relative w-full max-w-[880px]">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[32px] bg-white">
+              <Image src="/img/obra-bianca-t.jpg" alt="Obra emoldurada com formas coloridas, círculos concêntricos e pequenas pinceladas em várias cores" fill sizes="(min-width: 928px) 880px, 100vw" className="object-cover" />
             </div>
             <Sticker className="-bottom-4 right-6">Obra de Bianca T.</Sticker>
           </Reveal>
-          <Reveal delay={0.1} className="flex flex-col gap-4 rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
+          <Reveal delay={0.1} className="flex w-full max-w-3xl flex-col gap-4 rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
             <h2 className="text-[22px] tracking-[-0.03em] text-ink">{oficinasIntro.title}</h2>
             <p>{p1}</p>
             <p>{p2}</p>
