@@ -46,7 +46,7 @@ export default function OficinasPage() {
             <p>{p2}</p>
             <p>{p3}</p>
             <p>{p4}</p>
-            <p>
+            <p className="font-semibold text-ink">
               Veja abaixo um pouco de cada oficina e acesse o link{" "}
               <Link href="/textos-e-publicacoes" className="font-medium text-leaf underline underline-offset-4">
                 textos e publicações
