@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { contact, nav } from "@/lib/content";
 import { SocialEmail, SocialFacebook, SocialInstagram } from "./Icons";
+import { WhatsAppMenu } from "./WhatsAppMenu";
 
 const social = [
   { href: `mailto:${contact.email}`, label: `E-mail: ${contact.email}`, Icon: SocialEmail },
@@ -37,8 +38,9 @@ export function Footer() {
         <div className="mt-8 flex items-center justify-between gap-4 border-t border-paper/20 pt-6">
           <p className="text-[13px] text-paper/70">© {new Date().getFullYear()} Equipe Ponte</p>
           <ul className="flex items-center gap-4">
-            {social.map(({ href, label, Icon }) => (
-              <li key={href}>
+            {social.map(({ href, label, Icon }, i) => (
+              <li key={href} className="flex items-center gap-4">
+                {i === 1 && <WhatsAppMenu />}
                 <a
                   href={href}
                   aria-label={label}

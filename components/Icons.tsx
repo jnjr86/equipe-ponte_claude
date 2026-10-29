@@ -123,3 +123,10 @@ export const IconPhone = (p: P) => (
     <path d="M5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 7.5 7.5l1.5-2 4 1.5v3A2 2 0 0 1 18.5 21 15.5 15.5 0 0 1 3 5.5 2 2 0 0 1 5 3.5Z" />
   </svg>
 );
+
+export const SocialWhatsApp = (p: P) => (
+  <svg viewBox="0 0 24 24" width={24} height={24} fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinejoin="round" strokeLinecap="round" aria-hidden {...p}>
+    <path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.9L2.2 21.8l4.8-1.3A9.8 9.8 0 1 0 12 2.2Z" />
+    <path d="M8.6 7.4c.3-.3.8-.3 1 .1l.9 1.9c.1.3 0 .6-.2.8l-.6.6c.6 1.3 1.6 2.3 2.9 2.9l.6-.6c.2-.2.5-.3.8-.2l1.9.9c.4.2.4.7.1 1-1 1-2.3 1.4-3.6.8a9.6 9.6 0 0 1-4.5-4.5c-.6-1.3-.2-2.7.7-3.7Z" />
+  </svg>
+);
