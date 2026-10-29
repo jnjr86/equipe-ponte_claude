@@ -20,8 +20,8 @@ export default function HomePage() {
       <section className="pt-20 sm:pt-28">
         <Container className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <Reveal className="relative">
-            <div className="relative aspect-[4/3.4] overflow-hidden rounded-[32px] bg-white">
-              <Image src="/img/obra-gabriel-n.jpg" alt="Pintura abstrata com traços em azul, vermelho e amarelo sobre fundo branco" fill sizes="(min-width: 1024px) 540px, 100vw" className="object-cover" />
+            <div className="relative aspect-[1439/1080] overflow-hidden rounded-[32px] bg-white">
+              <Image src="/img/obra-gabriel-n.jpg" alt="Pintura abstrata com traços em azul, vermelho, preto e amarelo sobre tela branca" fill sizes="(min-width: 1024px) 540px, 100vw" className="object-contain" />
             </div>
             <Sticker className="-bottom-4 right-6">Obra de Gabriel N.</Sticker>
           </Reveal>
