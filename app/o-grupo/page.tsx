@@ -61,7 +61,9 @@ export default function GrupoPage() {
           </Reveal>
           <Reveal className="mx-auto mt-12 max-w-3xl space-y-4 rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
             {grupo.why.map((p, i) => (
-              <p key={i}>{p}</p>
+              <p key={i} className={i === grupo.why.length - 1 ? "font-semibold text-ink" : undefined}>
+                {p}
+              </p>
             ))}
           </Reveal>
           <Reveal className="mx-auto mt-12 flex max-w-[750px] flex-col items-center gap-6 text-center">
