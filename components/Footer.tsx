@@ -35,9 +35,10 @@ export function Footer() {
           </ul>
         </nav>
 
-        <div className="mt-8 flex items-center justify-between gap-4 border-t border-paper/20 pt-6">
-          <p className="text-[13px] text-paper/70">© {new Date().getFullYear()} Equipe Ponte</p>
-          <ul className="flex items-center gap-4">
+        <div className="mt-8 flex flex-col items-center gap-4 border-t border-paper/20 pt-6 sm:grid sm:grid-cols-[1fr_auto_1fr]">
+          <p className="text-[13px] text-paper/70 sm:justify-self-start">© {new Date().getFullYear()} Equipe Ponte</p>
+          <p className="text-center text-[13px] text-paper/70">Rua Paris, 656 – Sumaré · São Paulo</p>
+          <ul className="flex items-center gap-4 sm:justify-self-end">
             {social.map(({ href, label, Icon }, i) => (
               <li key={href} className="flex items-center gap-4">
                 {i === 1 && <WhatsAppMenu />}
