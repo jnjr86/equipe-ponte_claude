@@ -59,14 +59,11 @@ export default function GrupoPage() {
               mas a partir do outro e
             </Title>
           </Reveal>
-          <div className="mt-12 grid gap-4 lg:grid-cols-2">
+          <Reveal className="mx-auto mt-12 max-w-3xl space-y-4 rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
             {grupo.why.map((p, i) => (
-              <Reveal key={i} delay={(i % 2) * 0.08} className={`rounded-3xl p-6 text-[15px] leading-relaxed sm:p-8 ${i === 3 ? "bg-ink text-paper/85" : "bg-white text-ink-soft"}`}>
-                <span className={`mb-4 block text-[30px] leading-none ${i === 3 ? "text-verde-01" : "text-ink/30"}`}>{String(i + 1).padStart(2, "0")}</span>
-                <p>{p}</p>
-              </Reveal>
+              <p key={i}>{p}</p>
             ))}
-          </div>
+          </Reveal>
           <Reveal className="mx-auto mt-12 flex max-w-[750px] flex-col items-center gap-6 text-center">
             <p className="text-[17px] font-medium leading-relaxed text-ink-soft">{grupo.toOficinas}</p>
             <Button href="/oficinas">Ver as oficinas</Button>
