@@ -37,13 +37,6 @@ export default function GrupoPage() {
           </Reveal>
           <Reveal delay={0.1} className="flex flex-col gap-4 rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
             <p>{grupo.history}</p>
-          </Reveal>
-        </Container>
-      </section>
-
-      <section className="pt-16 sm:pt-24">
-        <Container>
-          <Reveal className="mx-auto max-w-3xl rounded-3xl bg-white p-6 text-[15px] leading-relaxed text-ink-soft sm:p-8">
             <p>{grupo.reference}</p>
           </Reveal>
         </Container>
