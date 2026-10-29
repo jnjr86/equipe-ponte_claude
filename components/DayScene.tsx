@@ -120,8 +120,8 @@ export function DayScene() {
 
       <div className="relative order-1 overflow-hidden rounded-3xl lg:order-2">
         <motion.svg viewBox="0 0 400 260" className="block w-full" animate={{ backgroundColor: skies[active] }} transition={{ duration: 0.6 }} role="img" aria-label={`Ilustração: ${scene.line}`}>
-          <motion.circle r="26" fill="#6ec597" initial={false} animate={{ cx: sunX, cy: sunY }} transition={{ type: "spring", stiffness: 60, damping: 14 }} />
-          <motion.circle r="38" fill="#6ec597" opacity="0.25" initial={false} animate={{ cx: sunX, cy: sunY }} transition={{ type: "spring", stiffness: 60, damping: 14 }} />
+          <circle r="26" fill="#6ec597" cx={sunX} cy={sunY} />
+          <circle r="38" fill="#6ec597" opacity="0.25" cx={sunX} cy={sunY} />
           <path d="M0 210 Q100 186 200 200 T400 196 V260 H0Z" fill="#9fd4b7" />
           <path d="M0 226 Q120 208 220 220 T400 214 V260 H0Z" fill="#6ec597" />
           <AnimatePresence mode="wait">

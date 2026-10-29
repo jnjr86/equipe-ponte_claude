@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { useEffect, useRef, useState } from "react";
 import { Flower, type FlowerKind } from "./Flower";
 import { IconArrow } from "./Icons";
 
@@ -32,10 +31,8 @@ export function GardenCard({ id, index, name, lead, href }: { id: string; index:
             {String(index + 1).padStart(2, "0")}
           </span>
           <div className="absolute inset-x-0 bottom-0 h-14 bg-ground" />
-          <div className="absolute bottom-9 left-1/2 -translate-x-1/2 transition-transform duration-500 group-hover:-translate-y-2">
-            <Mount>
-              <Flower kind={look.kind} petal={look.petal} center={look.center} height={84} headScale={1.45} delay={0.2 + index * 0.08} />
-            </Mount>
+          <div className="absolute bottom-9 left-1/2 -translate-x-1/2">
+            <Flower kind={look.kind} petal={look.petal} center={look.center} height={84} headScale={1.45} />
           </div>
         </div>
         <h3 className="mt-5 text-[22px] tracking-[-0.03em]">{name}</h3>
@@ -47,23 +44,5 @@ export function GardenCard({ id, index, name, lead, href }: { id: string; index:
         </span>
       </Link>
     </motion.div>
-  );
-}
-
-/** Só monta a flor quando o cartão entra na tela, para ela crescer à vista. */
-function Mount({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const io = new IntersectionObserver(([entry]) => entry.isIntersecting && setVisible(true), { rootMargin: "0px 0px -40px 0px" });
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-  return (
-    <div ref={ref} className="h-[150px] w-[80px]">
-      {visible ? children : null}
-    </div>
   );
 }

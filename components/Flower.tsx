@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "motion/react";
-
 export type FlowerKind = "daisy" | "round" | "tulip" | "star";
 
 type Props = {
@@ -10,8 +6,6 @@ type Props = {
   center?: string;
   height: number;
   leaf?: "left" | "right";
-  delay?: number;
-  sway?: number;
   headScale?: number;
   className?: string;
 };
@@ -58,8 +52,8 @@ function Head({ kind, petal, center }: { kind: FlowerKind; petal: string; center
   }
 }
 
-/** Flor ilustrada: o caule cresce, a flor abre e depois balança devagar. */
-export function Flower({ kind, petal, center = "#ffffff", height, leaf = "right", delay = 0, sway = 3, headScale = 1.6, className = "" }: Props) {
+/** Flor ilustrada (estática). */
+export function Flower({ kind, petal, center = "#ffffff", height, leaf = "right", headScale = 1.6, className = "" }: Props) {
   const w = 80;
   const h = height + 40;
   const top = 14 + 22 * headScale;
@@ -71,43 +65,12 @@ export function Flower({ kind, petal, center = "#ffffff", height, leaf = "right"
       : `M${w / 2 - 1} ${ly} q -12 -12 -24 -6 q 10 12 24 6Z`;
 
   return (
-    <motion.svg
-      viewBox={`0 0 ${w} ${h}`}
-      width={w}
-      height={h}
-      className={`overflow-visible ${className}`}
-      style={{ transformOrigin: "50% 100%" }}
-      animate={{ rotate: [-sway, sway, -sway] }}
-      transition={{ duration: 5 + sway, repeat: Infinity, ease: "easeInOut", delay: delay + 1.2 }}
-      aria-hidden
-    >
-      <motion.path
-        d={stem}
-        fill="none"
-        stroke={STEM}
-        strokeWidth="5"
-        strokeLinecap="round"
-        initial={{ pathLength: 0 }}
-        animate={{ pathLength: 1 }}
-        transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay }}
-      />
-      <motion.path
-        d={leafPath}
-        fill={STEM}
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        style={{ transformOrigin: `${w / 2}px ${ly}px` }}
-        transition={{ type: "spring", stiffness: 200, damping: 12, delay: delay + 0.55 }}
-      />
+    <svg viewBox={`0 0 ${w} ${h}`} width={w} height={h} className={`overflow-visible ${className}`} aria-hidden>
+      <path d={stem} fill="none" stroke={STEM} strokeWidth="5" strokeLinecap="round" />
+      <path d={leafPath} fill={STEM} />
       <g transform={`translate(${w / 2} ${top}) scale(${headScale})`}>
-        <motion.g
-          initial={{ scale: 0, rotate: -40 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ type: "spring", stiffness: 220, damping: 11, delay: delay + 0.85 }}
-        >
-          <Head kind={kind} petal={petal} center={center} />
-        </motion.g>
+        <Head kind={kind} petal={petal} center={center} />
       </g>
-    </motion.svg>
+    </svg>
   );
 }
